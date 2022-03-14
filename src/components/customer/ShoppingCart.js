@@ -105,7 +105,7 @@ const ShoppingCart = () => {
             alignSelf: 'end',
           }}
         >
-          Remove items
+          Empty cart
         </Button>
         <Button
           variant='contained'
