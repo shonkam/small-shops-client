@@ -9,6 +9,7 @@ import {
 import { Provider } from 'react-redux'
 import { setContext } from '@apollo/client/link/context'
 import App from './App'
+import DemoHeader from './components/DemoHeader'
 import store from './redux/reduxStore'
 
 const setAuthorizationLink = setContext((_, { headers }) => {
@@ -38,6 +39,7 @@ const client = new ApolloClient({
 ReactDOM.render(
   <Provider store={store}>
     <ApolloProvider client={client}>
+      <DemoHeader />
       <App />
     </ApolloProvider>
   </Provider>,

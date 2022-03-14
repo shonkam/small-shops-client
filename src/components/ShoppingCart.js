@@ -10,10 +10,10 @@ import {
   TableRow,
   TableCell,
 } from '@mui/material'
-import LoadingScreen from '../LoadingScreen'
-import { emptyCart } from '../../redux/reducers/shoppingCartReducer'
-import { removeStore } from '../../redux/reducers/currentStoreReducer'
-import useCreateOrder from '../../hooks/useCreateOrder'
+import LoadingScreen from './LoadingScreen'
+import { emptyCart } from '../redux/reducers/shoppingCartReducer'
+import { removeStore } from '../redux/reducers/currentStoreReducer'
+import useCreateOrder from '../hooks/useCreateOrder'
 
 const ShoppingCart = () => {
   const dispatch = useDispatch()

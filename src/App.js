@@ -15,7 +15,7 @@ import { setUserType } from './redux/reducers/userReducer'
 import CustomerRouting from './routing/CustomerRouting'
 import StoreRouting from './routing/StoreRouting'
 import CustomerAllProducts from './components/customer/CustomerAllProducts'
-import ShoppingCart from './components/customer/ShoppingCart'
+import ShoppingCart from './components/ShoppingCart'
 
 const App = () => {
   const dispatch = useDispatch()
