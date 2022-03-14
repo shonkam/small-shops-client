@@ -52,6 +52,13 @@ export const ADD_STORE = gql`
   }
 `
 
+export const DELETE_STORE = gql`
+  mutation DeleteStore {
+    deleteStore {
+      successful
+    }
+  }
+`
 export const GET_STORES = gql`
   query allStores {
     allStores {

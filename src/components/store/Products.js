@@ -3,13 +3,13 @@ import { useNavigate } from 'react-router-dom'
 import {
   Container,
   Box,
-  Typography,
   ImageList,
   ImageListItem,
   ImageListItemBar,
   IconButton,
 } from '@mui/material'
 import SettingsIcon from '@mui/icons-material/Settings'
+import LoadingScreen from '../LoadingScreen'
 import useGetAllProducts from '../../hooks/useGetAllProducts'
 
 const Products = () => {
@@ -18,22 +18,7 @@ const Products = () => {
 
   if (!ownProducts) {
     return (
-      <Container maxWidth='lg'>
-        <Box sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          paddingTop: 20,
-        }}
-        >
-          <Typography
-            component='h1'
-            variant='h6'
-            alignSelf='center'
-          >
-            Loading results...
-          </Typography>
-        </Box>
-      </Container>
+      <LoadingScreen />
     )
   }
 
