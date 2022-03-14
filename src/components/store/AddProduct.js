@@ -24,8 +24,7 @@ const validationSchema = yup.object().shape({
     .number('Enter the number of available stock')
     .required('Product stock is required')
     .min(0, 'Stock can not be negative')
-    .integer('Stock must be an integer')
-    .typeError('Postal number can only contain numbers'),
+    .integer('Stock must be an integer'),
   productPictureURL: yup
     .string('Enter the URL to the picture')
     .required('Picture URL is required'),

@@ -172,9 +172,7 @@ const SignUp = () => {
             name='userType'
             value={signUpForm.values.userType}
             onChange={signUpForm.handleChange}
-            sx={{
-              flexDirection: 'row',
-            }}
+            sx={{ flexDirection: 'row' }}
           >
             <FormControlLabel
               value='customer'
