@@ -21,7 +21,7 @@ const validationSchema = yup.object().shape({
     .required('Email is required'),
   password: yup
     .string('Enter your password')
-    .min(7, 'Password should be atleast 7 characters long')
+    .min(7, 'Password should be at least 7 characters long')
     .required('Password is required'),
   passwordConfirmation: yup
     .string('Re-enter your password')
@@ -29,7 +29,7 @@ const validationSchema = yup.object().shape({
     .required('Password confirmation is required'),
   storeName: yup
     .string('Enter the name of the store')
-    .min(2, 'The name of the store should be atleast 2 characters long'),
+    .min(2, 'The name of the store should be at least 2 characters long'),
   storeDescription: yup
     .string('Enter a short description of you store')
     .max(60, 'The description must be under 60 characters long'),

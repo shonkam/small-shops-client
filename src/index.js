@@ -22,7 +22,7 @@ const setAuthorizationLink = setContext((_, { headers }) => {
 })
 
 const setHTTPLink = new HttpLink({
-  uri: 'http://localhost:3030/graphql',
+  uri: process.env.REACT_APP_URI,
 })
 
 const client = new ApolloClient({

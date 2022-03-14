@@ -23,6 +23,7 @@
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
+    "serve": "^13.0.2",
     "web-vitals": "^1.1.2",
     "yup": "^0.32.11"
   },
@@ -32,7 +33,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "lint-fix": "eslint --fix ."
+    "lint-fix": "eslint --fix .",
+    "heroku-postbuild": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "heroku-start": "serve -s build"
   },
   "eslintConfig": {
     "extends": [

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import StorefrontIcon from '@mui/icons-material/Storefront'
+import LoginIcon from '@mui/icons-material/Login'
+import AddBoxIcon from '@mui/icons-material/AddBox'
 import {
   AppBar,
   Button,
@@ -47,7 +49,7 @@ const LinkHeader = () => {
           <Button startIcon={<StorefrontIcon />} style={styles.link}>
             <Link to='/' style={styles.link}>Stores</Link>
           </Button>
-          <Button>
+          <Button startIcon={<LoginIcon />} style={styles.link}>
             <Link to='/login' style={styles.link}>Login</Link>
           </Button>
           <Button startIcon={<ShoppingCartIcon />} style={styles.link}>
@@ -57,10 +59,10 @@ const LinkHeader = () => {
               ) Cart
             </Link>
           </Button>
-          <Button>
+          <Button startIcon={<AddBoxIcon />} style={styles.link}>
             <Link to='/signup' style={styles.link}>Sign up</Link>
           </Button>
-          <Button>
+          <Button startIcon={<LoginIcon />} style={styles.link}>
             <Link to='/storelogin' style={styles.link}>Store login</Link>
           </Button>
         </Box>
